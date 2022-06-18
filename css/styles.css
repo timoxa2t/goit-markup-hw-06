@@ -332,7 +332,7 @@ img {
 
 .footer-form-container {
   width: 570px;
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .footer-form {
@@ -714,13 +714,12 @@ img {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 100vh;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
   padding: 40px;
   width: 528px;
-  height: 581px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -766,7 +765,7 @@ img {
 
   color: var(--main-color);
 
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .modal-form-label {
@@ -850,5 +849,9 @@ img {
 
 .modal-checkbox:checked + .modal-checkbox-label::before {
   background-image: url("../images/icon-check.svg");
+}
+
+.modal-checkbox-link{
+  color: var(--action-background);
 }
 /* modal (end) */
